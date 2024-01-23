@@ -4,5 +4,5 @@
 #### You can find my CV [here](CV.pdf)
 ## Working papers
 * Working paper No.1 [This is a link to a PDF file](Working_paper_No1.pdf)
-* Working paper No.2 [This is a link to a website](https://www.bilibili.com/)
+* Working paper No.2 [This is a link to a website](https://www.econ.cuhk.edu.hk/econ/en-gb/)
 * Working paper No.3
