@@ -20,22 +20,20 @@ body {
 /* Basic Information Part */
 .basic-info {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 2.25rem;
 }
 
-.photo-col img {
-  width: 175px;
-  height: auto;
-  border-radius: 6px;
-  display: block;
+.photo-col {
+  flex-shrink: 0;
 }
 
-.details-col h1 {
-  font-size: 1.85rem;
-  font-weight: 600;
-  margin-bottom: 0.35rem;
-  letter-spacing: -0.01em;
+.photo-col img {
+  height: 100%;
+  max-height: 225px;
+  width: auto;
+  border-radius: 6px;
+  display: block;
 }
 
 .affiliation, .institution {
