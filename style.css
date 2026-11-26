@@ -1,1 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Georgia, serif;
+  color: #1f2328;
+  background-color: #ffffff;
+  line-height: 1.65;
+  padding: 4rem 1.5rem;
+}
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* Basic Information Part */
+.basic-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.25rem;
+}
+
+.photo-col img {
+  width: 175px;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+
+.details-col h1 {
+  font-size: 1.85rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  letter-spacing: -0.01em;
+}
+
+.affiliation, .institution {
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+.bio {
+  margin-top: 0.9rem;
+  margin-bottom: 1rem;
+  font-size: 0.98rem;
+}
+
+.links a, .paper-title a, .paper-meta a {
+  color: #0969da;
+  text-decoration: none;
+}
+
+.links a:hover, .paper-title a:hover, .paper-meta a:hover {
+  text-decoration: underline;
+}
+
+.sep {
+  margin: 0 0.5rem;
+  color: #9ca3af;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 2.25rem 0;
+}
+
+/* Research Part */
+.research h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.paper-list {
+  list-style: none;
+}
+
+.paper-list li {
+  margin-bottom: 1.5rem;
+}
+
+.paper-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.paper-meta {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-top: 0.2rem;
+}
+
+.abstract {
+  margin-top: 0.4rem;
+  font-size: 0.92rem;
+  color: #374151;
+}
+
+.abstract summary {
+  cursor: pointer;
+  color: #4b5563;
+  user-select: none;
+}
+
+.abstract p {
+  margin-top: 0.5rem;
+  padding-left: 0.75rem;
+  border-left: 2px solid #e5e7eb;
+}
+
+/* Stack vertically on narrow mobile screens */
+@media (max-width: 600px) {
+  .basic-info {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .photo-col img {
+    width: 140px;
+  }
+}
